@@ -1,2 +1,2 @@
-# E-Camp_BootcampJS
+# E-Camp - BootcampJS
 Bootcamp JavaScript - OTEC E-camp -Talento Digital
