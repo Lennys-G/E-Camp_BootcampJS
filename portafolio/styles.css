@@ -1,0 +1,246 @@
+* {
+	font-family: 'Questrial', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0 auto;
+}
+html {
+	font-size: 16px;
+}
+body {
+	background: #e6e6e6;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.section {
+	margin-bottom: 5rem;
+}
+
+.section h2 {
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
+.shape-fill {
+	fill: #ebebeb;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ebebeb;
+}
+
+.logo {
+	margin: 1rem;
+}
+
+.btn-menu {
+	display: none; /* Oculto por defecto en pantallas grandes */
+}
+/* **************** NAV-BAR **************** */
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-link {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: #313131;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	background-color: #169799;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+/* **************** HERO **************** */
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5rem;
+	background-color: #ebebeb;
+}
+.hero-img {
+	width: 30%;
+	max-width: 520;
+	height: auto;
+	margin: 1.2rem;
+	flex-shrink: 0;
+}
+.hero-text {
+	font-family: 'Lexend', sans-serif;
+	text-transform: uppercase;
+	color: #474747;
+	margin: 1.2rem;
+}
+.hero-text h1 {
+	font-weight: 700;
+	font-size: 3.5rem;
+}
+.container-animationText {
+	display: inline-block;
+}
+.container-animationText p {
+	font-weight: 600;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	border-right: 3px solid;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 1s steps(10), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+	50% {
+		border-color: transparent;
+	}
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+/* **************** CARDS TECHNOLOGY **************** */
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;
+	box-shadow: 0 20px 30px #0003;
+}
+
+.card {
+	padding: 2rem;
+	width: 29%;
+	max-width: 120px;
+	height: auto;
+	margin-top: 1rem;
+}
+
+.card h3 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+/* **************** CARDS PROJECTS **************** */
+
+.card-project {
+	max-width: 330px;
+}
+
+/* **************** FORM CONTACT **************** */
+.form-container {
+	padding: 2rem;
+	box-shadow: 0 20px 30px #0003;
+}
+
+.btn-submit {
+	color: #fff;
+	font-weight: bold;
+	background-color: #169799;
+}
+
+.btn-submit:hover {
+	background-color: #107173;
+}
+
+/* **************** FOOTER **************** */
+
+.footer-bar {
+	box-shadow: 2px -1px 13px 4px rgba(0, 0, 0, 0.1);
+	background-color: #f7f7f79a;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.footer-bar p {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #5f5f5f;
+}
+
+@media (max-width: 830px) {
+	.hero-text h1 {
+		font-size: 2.5rem;
+	}
+	.hero-text span {
+		font-size: 1.2rem;
+	}
+
+	.card {
+		width: 30%;
+		max-width: 165px;
+	}
+}
+@media (max-width: 690px) {
+	.container {
+		width: 80%;
+	}
+	.header {
+		display: flow-root;
+	}
+	.btn-menu {
+		display: block;
+		position: fixed;
+		z-index: 999;
+		top: 1vh;
+		right: 1vw;
+	}
+	.nav-bar {
+		display: none;
+	}
+	.nav-bar.is-active {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-link:hover {
+		text-align: center;
+		width: 90%;
+	}
+	.hero {
+		padding-top: 0;
+	}
+	.hero-img {
+		display: none;
+	}
+	.card {
+		width: 50%;
+		max-width: 150px;
+	}
+	.card-project_container {
+		display: flex;
+		flex-direction: column;
+	}
+	.card-project {
+		width: 100%;
+		max-width: 550px;
+		height: auto;
+	}
+
+	.container_social-icon {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+	}
+
+	.form-contact {
+		max-width: 90%;
+	}
+}

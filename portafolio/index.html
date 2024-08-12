@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Lennys G - Portafolio</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+
+    <div class="logo">
+      <a href="#">
+        <object data="/images/lg-logo_bk.png  " width="50" height="50"></object>
+      </a>
+    </div>
+
+    <nav id="navBar" class="nav-bar">
+      <a class="nav-link" href="#">Incio</a>
+      <a class="nav-link" href="#">Sobre mi</a>
+      <a class="nav-link" href="#">Tencnologías</a>
+      <a class="nav-link" href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <div id="btnMenu" class="btn-menu">
+    <button class="hamburger hamburger--squeeze" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+
+
+  <!-- Main -->
+  <main>
+
+    <!-- Hero -->
+    <div class="hero">
+      <object data="/images/hero.svg" class="hero-img"></object>
+      <div class="hero-text">
+        <h1>lennys gonzález</h1>
+        <div class="container-animationText">
+          <p>web developer.</p>
+        </div>
+        <div class="container_social-icon">
+          <a href="#"><img src="./images/github.png" alt="Logo github" class="social-icon"></a>
+          <a href="#"><img src="./images/linkedin.png" alt="Logo linkedin" class="social-icon"></a>
+          <a href="#"><img src="./images/correo.png" alt="Logo email" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+      class="shape-fill">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
+    </svg>
+
+
+    <!-- Content -->
+    <div class="container">
+
+      <!-- Sobre mi -->
+      <section class="section">
+        <h2>Sobre Mí</h2>
+        <p>Me caracterizo por ser un entusiasta del aprendizaje constante y la evolución de mis habilidades
+          profesionales.
+          Actualmente, me encuentro inmerso en la carrera de Programación y Análisis de Sistemas, donde estoy
+          profundizando en
+          conceptos clave y perfeccionando mis destrezas técnicas. Esta formación me ha proporcionado una base sólida
+          en
+          el ámbito
+          de la tecnología e informática, preparándome para desafíos y proyectos en el campo.</p>
+      </section>
+
+      <!-- Tencnologías -->
+      <section class="section" id="technologySection">
+        <h2>Tencnologías</h2>
+
+        <div class="card-container">
+
+          <div class="card card-html">
+            <h3>HTML</h3>
+            <img src="/images/html-1.svg" class="card-img" alt="Logo HTML">
+          </div>
+
+          <div class="card card-css">
+            <h3>CSS</h3>
+            <img src="/images/css-3.svg" class="card-img" alt="Logo CSS">
+          </div>
+
+          <div class="card card-js">
+            <h3>JavaScript</h3>
+            <img src="/images/javascript-1.svg" class="card-img" alt="Logo JavaScript">
+          </div>
+
+          <div class="card card-react">
+            <h3>React</h3>
+            <img src="/images/react-2.svg" class="card-img" alt="Logo React">
+          </div>
+
+          <div class="card card-css">
+            <h3>Node.JS</h3>
+            <img src="/images/nodejs-3.svg" class="card-img" alt="Logo Node JS">
+          </div>
+
+          <div class="card card-laravel">
+            <h3>Laravel</h3>
+            <img src="/images/laravel-2.svg" class="card-img" alt="Logo Laravel">
+          </div>
+
+      </section>
+
+      <section class="section" id="projectSection">
+        <h2>Proyectos</h2>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section" id="contactSection">
+        <h2>Contáctame</h2>
+        <div class="form-container">
+          <form style="width: 26rem;" class="form-contact">
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="inputName">Nombre</label>
+              <input type="text" id="inputName" class="form-control" required minlength="3" />
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="inputEmail">Correo</label>
+              <input type="email" id="inputEmail" class="form-control" required />
+            </div>
+
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="inputMessage">Mensaje</label>
+              <textarea class="form-control" id="inputMessage" rows="4" required minlength="10"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex mb-4">
+              <label class="form-check-label" for="checkbox">Recibir una copia de este mensaje
+              </label>
+              <input class="form-check-input" type="checkbox" value="" id="checkbox" />
+            </div>
+
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-block btn-submit mb-4">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-bar">
+    <div class="logo">
+      <a href="#">
+        <object data="/images/lg-logo_bk.png  " width="50" height="50"></object>
+      </a>
+    </div>
+
+    <p> Desarrollado por: Lennys G - Con fines educativos</p>
+
+  </footer>
+
+
+</body>
+<script type="module" src="/main.js"></script>
+
+</html>
